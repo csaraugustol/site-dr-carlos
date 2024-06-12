@@ -1,0 +1,196 @@
+:root {
+    --color-blue: #4A90E2;
+    --color-background: #FBFBFB;
+    --color-text: #252525;
+    --color-white: #FFF;
+    --font: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font);
+    padding: 0 8px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-blue);
+}
+
+.btn-link {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+}
+
+.heading-style::after {
+    content: '';
+    width: 20%;
+    /* Ajuste a largura conforme necessário */
+    height: 2px;
+    /* Ajuste a espessura da linha aqui */
+    background-color: var(--color-blue);
+    /* Cor de exemplo */
+    position: absolute;
+    bottom: 10px;
+    /* Ajuste a distância do texto */
+    left: 0;
+    /* Ajuste o espaço entre o texto e a linha */
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+}
+
+.section-title h2 {
+    position: relative;
+    text-transform: none;
+}
+
+.section-title h3 {
+    position: relative;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.section-title h4 {
+    position: relative;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eaeaea;
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: #94CCF4;
+}
+
+.section-title.center:after {
+    left: 50%;
+    margin-left: -25px;
+}
+
+/* Adicione isso ao seu arquivo CSS */
+
+.statistics-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+}
+
+.statistic {
+    margin: 4px 0;
+    padding: 8px;
+    background-color: #4A90E2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4A90E2;
+    border-radius: 10px;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1em;
+}
+
+/*Cards dos Atendiementos*/
+.card {
+    width: 300px;
+    /* Ajuste conforme necessário */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Efeito de sombra */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+} 
+
+.card-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    /* Cor de texto mais clara para o texto do espaço reservado */
+    margin-bottom: 16px;
+}
+
+.card button {
+    background-color: #007bff;
+    /* Cor azul de exemplo */
+    color: var(--color-white);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    /* Cantos arredondados para o botão */
+    cursor: pointer;
+    /* Cursor de ponteiro ao passar o mouse */
+}
+
+.btn-schedule-appointment {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.carousel-inner{
+    width: auto;
+}
+
+@media (min-width: 572px) {
+    body {
+        font-size: 18px;
+    }
+
+    .statistics-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #F5F5F5;
+    }
+}
