@@ -131,11 +131,11 @@ h6 {
 
 /*Cards dos Atendiementos*/
 .card {
-    width: 300px;
+    width: 350px;
     /* Ajuste conforme necessário */
     border-radius: 10px;
     /* Cantos arredondados */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
     /* Efeito de sombra */
 }
 
@@ -146,7 +146,7 @@ h6 {
 
 .card-content {
     padding: 16px;
-} 
+}
 
 .card-content h2 {
     font-size: 18px;
@@ -180,6 +180,11 @@ h6 {
 
 .carousel-inner{
     width: auto;
+}
+
+footer {
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 @media (min-width: 572px) {
