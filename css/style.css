@@ -140,7 +140,7 @@ h6 {
 }
 
 .card img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -182,6 +182,15 @@ h6 {
     width: auto;
 }
 
+.carousel-inner .carousel-item h2 {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+#atendimentos-sem-carrosel {
+    display: none;
+}
+
 footer {
     background-color: var(--color-blue);
     color: var(--color-white);
@@ -197,5 +206,52 @@ footer {
         display: flex;
         justify-content: space-around;
         background-color: #F5F5F5;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    #carouselAreasAtend {
+        display: none !important;
+    }
+
+    #atendimentos-sem-carrosel {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #atendimentos-sem-carrosel .card {
+        height: 280px;
+        justify-content: space-between;
+    }
+
+    #atendimentos-sem-carrosel h2 {
+        color: var(--color-text);
+        font-weight: 500;
+    }
+
+    #atendimentos-sem-carrosel a {
+        font-size: 14px;
+    }
+
+    #atendimentos-sem-carrosel img {
+        border-radius: 8px 8px 0 0;
+        height: 175px;
+    }
+
+    .statistics-container {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .statistics-container .statistic {
+        width: 50%;
     }
 }
