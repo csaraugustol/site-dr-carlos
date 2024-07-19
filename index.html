@@ -17,326 +17,390 @@
   <title>Dr. João Carlos</title>
 </head>
 
-<body>
-  <header class="col-12">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="src/img/logo.svg"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
-            <a class="nav-link" href="#hrefSobre">Sobre</a>
-            <a class="nav-link" href="#hrefAreasAtend">Áreas de Atendimento</a>
+<body class="fade-in">
+  <div class="container-content">
+    <header class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="src/img/logo.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link close-link" aria-current="page" href="#">Início</a>
+              <a class="nav-link close-link" href="#hrefSobre">Sobre</a>
+              <a class="nav-link close-link" href="#hrefAreasAtend">Áreas de Atendimento</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+  
+    <section class="d-flex flex-column mt-5">
+      <h1 class="text-center mt-4">Dr. João Carlos</h1>
+      <p>Sou especialista em gastroenterologia, e estou aqui para oferecer o melhor cuidado para a sua saúde digestiva. Estou comprometido em proporcionar um atendimento de excelência, com atenção personalizada e tratamentos baseados nas mais recentes evidências científicas.</p>
+      <a class="btn btn-primary btn-link text-uppercase fw-bold" href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." role="button">Agendar Consulta</a>
+    </section>
+  
+    <section class="d-flex flex-column mt-5">
+      <h2 class="text-center section-title center">Alguns Números</h2>
+      <div class="statistics-container">
+        <div class="statistic">
+          <div class="number"  data-count="20">+0</div>
+          <div class="description">Anos de Experiência</div>
+        </div>
+        <div class="statistic">
+          <div class="number"  data-count="500">+0</div>
+          <div class="description">Pacientes Atendidos</div>
+        </div>
+        <div class="statistic">
+          <div class="number"  data-count="350">+0</div>
+          <div class="description">Exames Realizados</div>
+        </div>
+        <div class="statistic">
+          <div class="number"  data-count="100">0%</div>
+          <div class="description">Satisfação dos Clientes</div>
+        </div>
       </div>
-    </nav>
-  </header>
-
-  <section class="d-flex flex-column mt-5">
-    <h1 class="text-center mt-4">Dr. João Carlos</h1>
-    <p>Sou especialista em gastroenterologia, e estou aqui para oferecer o melhor cuidado para a sua saúde digestiva. Estou comprometido em proporcionar um atendimento de excelência, com atenção personalizada e tratamentos baseados nas mais recentes evidências científicas.</p>
-    <a class="btn btn-primary btn-link text-uppercase fw-bold" href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." role="button">Agendar Consulta</a>
-  </section>
-
-  <section class="d-flex flex-column mt-5">
-    <h2 class="text-center section-title center">Alguns Números</h2>
-    <div class="statistics-container">
-      <div class="statistic">
-        <div class="number">+20</div>
-        <div class="description">Anos de Experiência</div>
+    </section>
+  
+    <section id="hrefSobre" class="d-flex flex-column mt-5">
+      <h2 class="text-center section-title center">Sobre</h2>
+      <p>Sou especialista em gastroenterologia, com mais de 20 anos de experiência na área. Formei-me em Medicina pela Universidade de São Paulo (USP), uma das instituições mais renomadas do país, e possuo pós-graduação internacional, o que me permite trazer as melhores práticas e inovações do mundo para o cuidado dos meus pacientes. Trabalho na cidade de Juiz de Fora e sou reconhecido na minha área e região pela dedicação e excelência no atendimento.</p>
+    </section>
+  
+    <section id="hrefAreasAtend" class="d-flex flex-column mt-5">
+      <h2 class="text-center section-title center">Áreas de Atendimento</h2>
+      <p>Uma ampla gama de serviços para atender às necessidades de saúde de diversos tipos de pacientes. Conheça algumas das principais áreas de atendimento.</p>
+  
+  
+      <div id="carouselAreasAtend" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="src/img/biopsia-prost.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Biópsia Prostática</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="card carousel-item">
+            <div class="card">
+              <img src="src/img/colonoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Colonoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="src/img/ecoendoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Ecoendoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="src/img/endoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="card carousel-item">
+            <div class="card">
+              <img src="src/img/endoscopia-digestiva-alta.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Alta</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="src/img/Endoscopia-Digestiva-Terapeutica-Cirúrgica.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Terapeutica Cirúrgica</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="src/img/Endoscopia-Digestiva-Terapeutica-Clínica.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Terapeutica Clínica</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="src/img/Ultrossonografia-Abdominal.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Ultrossonografia Abdominal</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreasAtend"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAreasAtend"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="statistic">
-        <div class="number">+500</div>
-        <div class="description">Pacientes Atendidos</div>
-      </div>
-      <div class="statistic">
-        <div class="number">+350</div>
-        <div class="description">Exames Realizados</div>
-      </div>
-      <div class="statistic">
-        <div class="number">100%</div>
-        <div class="description">Satisfação dos Clientes</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="hrefSobre" class="d-flex flex-column mt-5">
-    <h2 class="text-center section-title center">Sobre</h2>
-    <p>Sou especialista em gastroenterologia, com mais de 20 anos de experiência na área. Formei-me em Medicina pela Universidade de São Paulo (USP), uma das instituições mais renomadas do país, e possuo pós-graduação internacional, o que me permite trazer as melhores práticas e inovações do mundo para o cuidado dos meus pacientes. Trabalho na cidade de Juiz de Fora e sou reconhecido na minha área e região pela dedicação e excelência no atendimento.</p>
-  </section>
-
-  <section id="hrefAreasAtend" class="d-flex flex-column mt-5">
-    <h2 class="text-center section-title center">Áreas de Atendimento</h2>
-    <p>Uma ampla gama de serviços para atender às necessidades de saúde de diversos tipos de pacientes. Conheça algumas das principais áreas de atendimento.</p>
-
-
-    <div id="carouselAreasAtend" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card">
+  
+      <div id="atendimentos-sem-carrosel">
+        
+        <div class="">
+          <div class="card active">
             <img src="src/img/biopsia-prost.png" alt="Procedimento Médico">
             <div class="card-content">
               <h2>Biópsia Prostática</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
             </div>
           </div>
         </div>
-        <div class="card carousel-item">
-          <div class="card">
-            <img src="src/img/colonoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Colonoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+          <div class="">
+            <div class="card">
+              <img src="src/img/colonoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Colonoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/ecoendoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Ecoendoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/endoscopia.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/endoscopia-digestiva-alta.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Alta</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/Endoscopia-Digestiva-Terapeutica-Clínica.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Terapeutica Clínica</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/Endoscopia-Digestiva-Terapeutica-Cirúrgica.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Endoscopia Digestiva Terapeutica Cirúrgica</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card">
+              <img src="src/img/Ultrossonografia-Abdominal.png" alt="Procedimento Médico">
+              <div class="card-content">
+                <h2>Ultrossonografia
+                  Abdominal</h2>
+                <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment btn-agenda">Agendar Consulta →</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+  
+    <section class="d-flex flex-column mt-5">
+      <h2 class="text-center section-title center">Depoimentos</h2>
+      <p>A satisfação dos pacientes é a prioridade. Um dos meus objetivos é garantir que cada pessoa receba o melhor atendimento possível. Veja o que alguns dos clientes têm a dizer sobre os serviços que receberam.</p>
+  
+  
+      <div id="carouselDepoimentos" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="card card-dep carousel-item active">
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Excelente Atendimento</h2>
+                <p>Fui muito bem atendido desde a recepção até a consulta com o médico.</p>
+                <div class="text-end">
+                  <h6>José Carlos</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-dep carousel-item">
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Serviço Único</h2>
+                <p>LoA equipe de enfermagem é excelente! Sempre muito cuidadosa e prestativa.</p>
+                <div class="text-end">
+                  <h6>Sofia Meireles</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-dep carousel-item">
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Muito Atencioso</h2>
+                <p>Estou muito satisfeita com o atendimento e os resultados apresentados.</p>
+                <div class="text-end">
+                  <h6>André Silva</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-dep carousel-item">
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Felicidade</h2>
+                <p>Minha saúde melhorou muito desde que comecei a ser atendido aqui.</p>
+                <div class="text-end">
+                  <h6>Joana Souza</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-dep carousel-item">
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Receptividade</h2>
+                <p>Desde a recepção até o atendimento médico, tudo foi perfeito.</p>
+                <div class="text-end">
+                  <h6>Maria Cristina</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="src/img/ecoendoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Ecoendoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="src/img/endoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-        <div class="card carousel-item">
+  
+      <div id="depoimentos-sem-carrosel">
           <div class="card">
-            <img src="src/img/endoscopia-digestiva-alta.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Alta</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Excelente Atendimento</h2>
+                <p>Fui muito bem atendido desde a recepção até a consulta com o médico.</p>
+                <div class="text-end">
+                  <h6>José Carlos</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
           <div class="card">
-            <img src="src/img/Endoscopia-Digestiva-Terapeutica-Cirúrgica.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Terapeutica Cirúrgica</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Serviço Único</h2>
+                <p>LoA equipe de enfermagem é excelente! Sempre muito cuidadosa e prestativa.</p>
+                <div class="text-end">
+                  <h6>Sofia Meireles</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
           <div class="card">
-            <img src="src/img/Endoscopia-Digestiva-Terapeutica-Clínica.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Terapeutica Clínica</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Muito Atencioso</h2>
+                <p>Estou muito satisfeita com o atendimento e os resultados apresentados.</p>
+                <div class="text-end">
+                  <h6>André Silva</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
           <div class="card">
-            <img src="src/img/Ultrossonografia-Abdominal.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Ultrossonografia Abdominal</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Felicidade</h2>
+                <p>Minha saúde melhorou muito desde que comecei a ser atendido aqui.</p>
+                <div class="text-end">
+                  <h6>Joana Souza</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreasAtend"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselAreasAtend"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div id="atendimentos-sem-carrosel">
-      
-      <div class="">
-        <div class="card active">
-          <img src="src/img/biopsia-prost.png" alt="Procedimento Médico">
-          <div class="card-content">
-            <h2>Biópsia Prostática</h2>
-            <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-          </div>
-        </div>
-      </div>
-        <div class="">
           <div class="card">
-            <img src="src/img/colonoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Colonoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/ecoendoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Ecoendoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/endoscopia.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/endoscopia-digestiva-alta.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Alta</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/Endoscopia-Digestiva-Terapeutica-Clínica.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Terapeutica Clínica</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/Endoscopia-Digestiva-Terapeutica-Cirúrgica.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Endoscopia Digestiva Terapeutica Cirúrgica</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card">
-            <img src="src/img/Ultrossonografia-Abdominal.png" alt="Procedimento Médico">
-            <div class="card-content">
-              <h2>Ultrossonografia
-                Abdominal</h2>
-              <a href="https://api.whatsapp.com/send?phone=5532900000000&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-schedule-appointment">Agendar Consulta →</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-  </section>
-
-  <section class="d-flex flex-column mt-5">
-    <h2 class="text-center section-title center">Depoimentos</h2>
-    <p>A satisfação dos pacientes é a prioridade. Um dos meus objetivos é garantir que cada pessoa receba o melhor atendimento possível. Veja o que alguns dos clientes têm a dizer sobre os serviços que receberam.</p>
-
-
-    <div id="carouselDepoimentos" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="card carousel-item active">
-          <div class="card text-start">
-            <div class="card-content">
-              <h2>Excelente Atendimento</h2>
-              <p>Fui muito bem atendido desde a recepção até a consulta com o médico.</p>
-              <div class="text-end">
-                <h6>José Carlos</h6>
-                <p class="mb-0">Paciente</p>
+            <div class="card text-start">
+              <div class="card-content">
+                <h2>Receptividade</h2>
+                <p>Desde a recepção até o atendimento médico, tudo foi perfeito.</p>
+                <div class="text-end">
+                  <h6>Maria Cristina</h6>
+                  <p class="mb-0">Paciente</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card carousel-item">
-          <div class="card text-start">
-            <div class="card-content">
-              <h2>Serviço Único</h2>
-              <p>LoA equipe de enfermagem é excelente! Sempre muito cuidadosa e prestativa.</p>
-              <div class="text-end">
-                <h6>Sofia Meireles</h6>
-                <p class="mb-0">Paciente</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card carousel-item">
-          <div class="card text-start">
-            <div class="card-content">
-              <h2>Muito Atencioso</h2>
-              <p>Estou muito satisfeita com o atendimento e os resultados apresentados.</p>
-              <div class="text-end">
-                <h6>André Silva</h6>
-                <p class="mb-0">Paciente</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card carousel-item">
-          <div class="card text-start">
-            <div class="card-content">
-              <h2>Felicidade</h2>
-              <p>Minha saúde melhorou muito desde que comecei a ser atendido aqui.</p>
-              <div class="text-end">
-                <h6>Joana Souza</h6>
-                <p class="mb-0">Paciente</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card carousel-item">
-          <div class="card text-start">
-            <div class="card-content">
-              <h2>Receptividade</h2>
-              <p>Desde a recepção até o atendimento médico, tudo foi perfeito.</p>
-              <div class="text-end">
-                <h6>Maria Cristina</h6>
-                <p class="mb-0">Paciente</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <section class="d-flex flex-column mt-5">
-    <h2 class="text-center section-title center">Localização</h2>
-    <p>Atendimento no coração da cidade, proporcionando fácil acesso. Área central, próximo a importantes pontos de referência, como centros comerciais, restaurantes e opções de transporte público, facilitando a chegada de todos.</p>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.3147795515006!2d-43.347612399999996!3d-21.768075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989b5e0aa4c05f%3A0xf89704104c51bf48!2sAv.%20Bar%C3%A3o%20do%20Rio%20Branco%2C%202985%20-%20Granbery%2C%20Juiz%20de%20Fora%20-%20MG%2C%2041615-001!5e0!3m2!1spt-BR!2sbr!4v1721177245965!5m2!1spt-BR!2sbr"
-      width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+    </section>
+  
+    <section class="d-flex flex-column mt-5">
+      <h2 class="text-center section-title center">Localização</h2>
+      <p>Atendimento no coração da cidade, proporcionando fácil acesso. Área central, próximo a importantes pontos de referência, como centros comerciais, restaurantes e opções de transporte público, facilitando a chegada de todos.</p>
+  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.3147795515006!2d-43.347612399999996!3d-21.768075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989b5e0aa4c05f%3A0xf89704104c51bf48!2sAv.%20Bar%C3%A3o%20do%20Rio%20Branco%2C%202985%20-%20Granbery%2C%20Juiz%20de%20Fora%20-%20MG%2C%2041615-001!5e0!3m2!1spt-BR!2sbr!4v1721177245965!5m2!1spt-BR!2sbr"
+        width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+ 
+  </div>
 
   <footer class="bg-body-tertiary text-center text-lg-start mt-5">
     <div class="text-center p-3">
       © 2024 Copyright - Desenvolvido por CA Softwares
     </div>
   </footer>
-
-
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -347,15 +411,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-<script>
-var $doc = $('html, body');
-$('a').click(function() {
-    $doc.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 700);
-    return false;
-});
-</script>
+    <script src="js/js.js"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--

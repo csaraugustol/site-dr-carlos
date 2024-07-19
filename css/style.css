@@ -1,5 +1,5 @@
 :root {
-    --color-blue: #4A90E2;
+    --color-blue: #3278c9;
     --color-background: #FBFBFB;
     --color-text: #252525;
     --color-white: #FFF;
@@ -10,9 +10,14 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font);
-    padding: 0 8px;
+    padding: 0 2px;
     text-align: center;
 }
+
+button, .btn {
+    box-shadow: none !important;
+    outline: none !important;
+  }
 
 h1,
 h2,
@@ -104,19 +109,19 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
 }
 
 .statistic {
     margin: 4px 0;
     padding: 8px;
-    background-color: #4A90E2;
-    color: white;
+    /* background-color: #4A90E2; */
+    color: var(--color-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #4A90E2;
+    /* border: 1px solid #4A90E2; */
     border-radius: 10px;
 }
 
@@ -137,6 +142,10 @@ h6 {
     /* Cantos arredondados */
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
     /* Efeito de sombra */
+}
+
+.card-dep {
+    width: 100%;
 }
 
 .card img {
@@ -187,14 +196,26 @@ h6 {
     font-weight: 500;
 }
 
-#atendimentos-sem-carrosel {
+#atendimentos-sem-carrosel, #depoimentos-sem-carrosel {
     display: none;
 }
 
 footer {
     background-color: var(--color-blue);
     color: var(--color-white);
+    width: 100%;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 
 @media (min-width: 572px) {
     body {
@@ -205,7 +226,6 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        background-color: #F5F5F5;
     }
 }
 
@@ -254,4 +274,46 @@ footer {
     .statistics-container .statistic {
         width: 50%;
     }
+
+    #carouselDepoimentos {
+        display: none !important;
+    }
+
+    #depoimentos-sem-carrosel {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
 }
+
+@media (min-width: 992px) {
+    .btn-agenda:hover {
+        color: #0b315a;
+        transform: scale(1.5);
+    }
+
+    .card-dep {
+        width: 350px;
+    }
+
+    .card:hover, .number:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .container-content {
+        width: 75%;
+    }
+}
+
