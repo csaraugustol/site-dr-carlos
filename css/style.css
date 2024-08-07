@@ -1,5 +1,5 @@
 :root {
-    --color-blue: #3278c9;
+    --color-blue: #496BAD;
     --color-background: #FBFBFB;
     --color-text: #252525;
     --color-white: #FFF;
@@ -10,7 +10,6 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font);
-    padding: 0 2px;
     text-align: center;
 }
 
@@ -52,6 +51,10 @@ h6 {
     /* Ajuste a distância do texto */
     left: 0;
     /* Ajuste o espaço entre o texto e a linha */
+}
+
+section {
+    padding: 32px 18px;
 }
 
 .section-title {
@@ -102,6 +105,27 @@ h6 {
     margin-left: -25px;
 }
 
+.section-reverse {
+    background-color: var(--color-blue);
+}
+
+.section-reverse .section-title, .section-reverse p {
+    color: var(--color-white);
+}
+
+.section-reverse .statistics-container .statistic{
+    color: var(--color-white);   
+}
+
+
+.section-reverse .section-title:before {
+    background: #eaeaea;
+}
+
+
+.section-reverse .section-title:after {
+    background: #eaeaea;
+}
 /* Adicione isso ao seu arquivo CSS */
 
 .statistics-container {
@@ -201,8 +225,6 @@ h6 {
 }
 
 footer {
-    background-color: var(--color-blue);
-    color: var(--color-white);
     width: 100%;
 }
 
@@ -235,6 +257,14 @@ footer {
         font-size: 18px;
     }
 
+    section {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
     #carouselAreasAtend {
         display: none !important;
     }
@@ -249,6 +279,7 @@ footer {
 
     #atendimentos-sem-carrosel .card {
         height: 280px;
+        width: 250px;
         justify-content: space-between;
     }
 
@@ -301,7 +332,24 @@ footer {
     .card:hover, .number:hover {
         transform: scale(1.02);
         transition: transform 0.3s ease-in-out;
+        background-color: #829fda;
+        color: var(--color-white) !important;
+
     }
+
+    .card h2:hover {
+        color: var(--color-white) !important;
+    }
+
+section {
+    padding: 32px 160px;
+    }
+
+    .section-reverse iframe {
+        width: 650px;
+        height: 400px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -310,10 +358,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    }
-
-    .container-content {
-        width: 75%;
     }
 }
 
